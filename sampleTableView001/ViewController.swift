@@ -15,7 +15,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
     @IBOutlet weak var myTableView: UITableView!
     
-    var proArray = ["C言語","Swift","PHP","Javascript","Ruby","Java","Python"]
+    var proArray = ["C言語","Swift","PHP","Javascript","Ruby","Java","Python","HTML"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
 //２.行数の決定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return proArray.count
     }
 
 //３.リストに表示する文字列を決定し、表示
